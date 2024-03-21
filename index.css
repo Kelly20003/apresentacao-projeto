@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-  
+    vertical-align: middle;
 }
-nav{
+
+nav {
     display: flex;
     height: 80px;
     width: 100%;
@@ -14,23 +15,25 @@ nav{
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
 }
-nav .logo{
+
+nav .logo {
     color: white;
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
 }
-nav ul{
+
+nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
@@ -40,16 +43,18 @@ nav ul li a{
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
+
 nav ul li a.active,
-nav ul li a:hover{
-    background: linear-gradient(#e05278,#df9d5f);
+nav ul li a:hover {
+    background: linear-gradient(#e05278, #df9d5f);
 }
 
-nav .menu-btn i{
+nav .menu-btn i {
     color: #fff;
     cursor: pointer;
     display: none;
 }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
 
     /** Formatar o menu para telas de iPhone 4 e 4s **/
@@ -58,34 +63,40 @@ nav .menu-btn i{
         top: 0;
     }
 
-    }
-    nav ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: #e3e9ea;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    nav ul.open{
-        left: 0;
-    }
-    nav ul li{
-        width: 100%;
-        margin: 50px 0;
-    }
-    nav ul li a {
-        font-size: 23px;
-    }
-    nav ul li a.active,
-    nav ul li a:hover{
-        background: none;
-        color: #f806ec;
-    }   
 }
+
+
+nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #e3e9ea;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+nav ul.open {
+    left: 0;
+}
+
+nav ul li {
+    width: 100%;
+    margin: 50px 0;
+}
+
+nav ul li a {
+    font-size: 23px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: none;
+    color: #f806ec;
+}
+
 
 
 .hero {
@@ -95,20 +106,20 @@ nav .menu-btn i{
     width: 100%;
     height: 100vh;
     background: #121212;
-   
+
 
 }
 
 nav ul li a:hover {
     color: rgb(75, 35, 76);
- 
-    
+
+
 }
 
 .detel {
     margin-left: 8%;
     margin-top: 15%;
-    
+
 }
 
 .detel h1 {
@@ -140,14 +151,23 @@ span {
     color: transparent;
     font-size: 48px;
     text-align: center;
-    
+
 }
-.foto{
-    float: left; /* Alinha a imagem à esquerda do texto */
-    margin-right: 10px; /* Adiciona um espaço entre a imagem e o texto */
+
+.foto {
+    float: left;
+    /* Alinha a imagem à esquerda do texto */
+    margin-right: 10px;
+    /* Adiciona um espaço entre a imagem e o texto */
     position: absolute;
-    top: 20%;;
+    top: 20%;
+    ;
     left: 80%;
     transform: translateX(-50%);
 
+}
+
+.viewport {
+    width: device-width;
+    zoom: 1.0;
 }
